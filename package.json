@@ -1,0 +1,27 @@
+{
+  "name": "TerChat",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "ws": "^8.8.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.25.2",
+    "@types/node": "^16.11.41",
+    "@types/ws": "^8.5.3",
+    "esbuild": "^0.14.47",
+    "eslint": "^8.18.0",
+    "tsup": "^6.1.2",
+    "typescript": "~4.7.4",
+    "vitest": "^0.16.0"
+  }
+}

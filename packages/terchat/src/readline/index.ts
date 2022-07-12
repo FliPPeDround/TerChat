@@ -10,13 +10,13 @@ export class Rl {
     this.init()
   }
 
-  init() {
+  private init() {
     this.rl = readLine.createInterface(process.stdin, process.stdout)
     this.rl.prompt()
 
     this.rl.on('line', (line) => {
       if (line === ':wq')
-        this.rl.close()
+        this.close()
       this.ws.send(line)
       console.log(`这是用户输入的内容：${line}`)
     })
